@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .cards-container
+        {
+            display: flex;
+            flex-direction: row;
+            background-color: bisque;
+            justify-content: start;
+            align-items: start;
+            height: 300px;
+        }
+        .cards-container2
+        {
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: bisque;
+            justify-content: end;
+            align-items: end;
+            height: 300px;
+            flex-wrap: wrap;
+
+        }
+        .cards-container3
+        {
+            display: flex;
+            flex-direction: column;
+            background-color: bisque;
+            width: 300px;
+            height: 800px;
+            justify-content: center;
+            align-items: center;
+          
+        }
+        .cards-container4
+        {
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: bisque;
+            width: 200px;
+            height: 800px;
+            justify-content: space-evenly;
+           
+        }
+        .cards-container5
+        {
+            display: flex;
+            flex-direction: row;
+            background-color: bisque;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+
+        }
+        .cards-container6
+        {
+            display: flex;
+            flex-direction: row;
+            background-color: bisque;
+            justify-content: space-between;
+            height: 300px;
+            align-items: center;
+
+        }
+        .card
+        {
+            width: 150px;
+            border: 4px double black;
+            border-radius: 10px;
+            margin: 5px;
+            background-color: white;
+            height: 180px;
+
+
+        }
+        .card-img
+        {
+            width: 100%;
+            height: 100px;
+            border-radius: 7px 7px 0px 0px;
+        }
+        .card-title
+        {
+            text-align: center;
+            margin-top: 5px;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards-container">
+        <div class="card">
+            <img src="jasmine flower.jpg" class="card-img"/>
+            <h2 class="card-title"> Jasmine </h2>
+
+        </div>
+        <div class="card">
+            <img src="rose flower.jpg" class="card-img"/>
+            <h2 class="card-title"> Rose</h2>
+
+        </div>
+        <div class="card">
+            <img src="kamalflower.jpg" class="card-img"/>
+            <h2 class="card-title"> Kamal</h2>
+
+        </div>
+        <div class="card">
+            <img src="Sunflower.jpg" class="card-img"/>
+            <h2 class="card-title"> Sunflower</h2>
+
+        </div>
+    </div>
+    <br>
+
+    <div class="cards-container2">
+        <div class="card">
+            <img src="jasmine flower.jpg" class="card-img"/>
+            <h2 class="card-title"> Jasmine </h2>
+
+        </div>
+        <div class="card">
+            <img src="rose flower.jpg" class="card-img"/>
+            <h2 class="card-title"> Rose</h2>
+
+        </div>
+        <div class="card">
+            <img src="kamalflower.jpg" class="card-img"/>
+            <h2 class="card-title"> Kamal</h2>
+
+        </div>
+        <div class="card">
+            <img src="Sunflower.jpg" class="card-img"/>
+            <h2 class="card-title"> Sunflower</h2>
+
+        </div>
+
+    </div>
+    <br>
+
+        <div class="cards-container3">
+            <div class="card">
+                <img src="jasmine flower.jpg" class="card-img"/>
+                <h2 class="card-title"> Jasmine </h2>
+    
+            </div>
+            <div class="card">
+                <img src="rose flower.jpg" class="card-img"/>
+                <h2 class="card-title"> Rose</h2>
+    
+            </div>
+            <div class="card">
+                <img src="kamalflower.jpg" class="card-img"/>
+                <h2 class="card-title"> Kamal</h2>
+    
+            </div>
+            <div class="card">
+                <img src="Sunflower.jpg" class="card-img"/>
+                <h2 class="card-title"> Sunflower</h2>
+    
+            </div>
+            
+        </div>
+        <br>
+        <div class="cards-container4">
+            <div class="card">
+                <img src="jasmine flower.jpg" class="card-img"/>
+                <h2 class="card-title"> Jasmine </h2>
+    
+            </div>
+            <div class="card">
+                <img src="rose flower.jpg" class="card-img"/>
+                <h2 class="card-title"> Rose</h2>
+    
+            </div>
+            <div class="card">
+                <img src="kamalflower.jpg" class="card-img"/>
+                <h2 class="card-title"> Kamal</h2>
+    
+            </div>
+            <div class="card">
+                <img src="Sunflower.jpg" class="card-img"/>
+                <h2 class="card-title"> Sunflower</h2>
+    
+            </div>
+        </div>
+        <br>
+
+        <div class="cards-container5">
+            <div class="card">
+                <img src="jasmine flower.jpg" class="card-img"/>
+                <h2 class="card-title"> Jasmine </h2>
+    
+            </div>
+            <div class="card">
+                <img src="rose flower.jpg" class="card-img"/>
+                <h2 class="card-title"> Rose</h2>
+    
+            </div>
+            <div class="card">
+                <img src="kamalflower.jpg" class="card-img"/>
+                <h2 class="card-title"> Kamal</h2>
+    
+            </div>
+            <div class="card">
+                <img src="Sunflower.jpg" class="card-img"/>
+                <h2 class="card-title"> Sunflower</h2>
+    
+            </div>
+        </div>
+        <br>
+
+        <div class="cards-container6">
+            <div class="card">
+                <img src="jasmine flower.jpg" class="card-img"/>
+                <h2 class="card-title"> Jasmine </h2>
+    
+            </div>
+            <div class="card">
+                <img src="rose flower.jpg" class="card-img"/>
+                <h2 class="card-title"> Roser</h2>
+    
+            </div>
+            <div class="card">
+                <img src="kamalflower.jpg" class="card-img"/>
+                <h2 class="card-title"> Kamal</h2>
+    
+            </div>
+            <div class="card">
+                <img src="Sunflower.jpg" class="card-img"/>
+                <h2 class="card-title"> Sunflower</h2>
+    
+            </div>
+        </div>
+
+</body>
+</html>
